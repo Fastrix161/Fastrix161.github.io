@@ -1,0 +1,558 @@
+body
+{
+    margin-top:2%;
+    padding-bottom: 5%;;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #2b3132;
+}
+
+#nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.tab{
+    font-size: 1.6rem;
+    font-family: 'Tektur', monospace;
+    color: #3a82a3;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+.tab:hover{
+    color: #025886;
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+#tab_end{
+    font-size: 1.6rem;
+    font-family: 'Tektur', monospace;
+    color: #3a82a3;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.heading1{
+    color:aqua;
+    text-align: center;
+    font-size: 2.2rem ;
+    font-weight: 500;
+    font-family: 'Tektur', cursive;
+    -webkit-text-stroke: 0.2rem rgb(83, 83, 203);
+    background-color: #0077B6;
+    background-image: url("images/shadows-army-solo-leveling.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition:all 0.4s ease-in-out;
+}
+
+.heading1:hover{
+    box-shadow: #57078c 0vw 0vw 0vw 0.5vw;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.05);
+}
+*{
+    scroll-behavior: smooth ;
+}
+
+.basic{
+    display: flex;
+    gap:1rem;
+    justify-content: space-evenly;
+}
+
+#Fastrix_img{
+    display:flex;
+    height: 100%;
+    width: auto;
+    max-width: 18.75rem;
+    size: cover;
+    object-fit: contain;
+    box-shadow: 0.25vw 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);   
+}
+#Fastrix_img:hover{
+    /* opacity:0.5;*/
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+#profile{
+    display: block;
+    font-size: 1.6rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #3a82a3;
+    margin-left: 0.6rem;
+}
+
+#about{
+    display: flex;
+    justify-self: center;
+    font-size: 3.2rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #3a82a3;
+    text-align: center;
+    object-fit: cover;
+    text-decoration: underline 0.6rem blueviolet;
+}
+#about:hover{
+    transform: scale(1.05);
+    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    transition: ease-out 0.3s;
+}
+
+#my_img{
+    display: flex;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+#basic2{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+#interest{
+    font-size: 1.6rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #57078c;
+    background-color: rgb(119, 177, 228);
+}
+
+#Easter_egg{
+    color: #ffffff;
+    font-family: 'Roboto-Mono', monospace;
+    font-size: 1.25rem;
+    background-color: #ffffff;
+    border:none;
+     /* border: #0077B6 solid; */
+     text-align: center;
+     align-items: center;
+}
+#Easter_egg:hover{
+    color: rgb(53, 139, 165);
+    font-family: 'Roboto-Mono', monospace;
+    background-color: rgb(221, 233, 236);
+}
+
+
+/* Skills */
+
+#skills_head{
+    font-size: 1.9rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #3a82a3;
+    text-align: center;
+    text-decoration: underline 0.6rem blueviolet;
+}
+#skills_head:hover{
+    transform: scale(1.05);
+    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    transition: ease-out 0.3s;
+}
+/* 
+@keyframes side1 {
+    0%{
+        transform: translate(position: absolute);
+    }
+     50%{
+        transform: translateX(-1.5rem);
+    } 
+    100%{
+        transform: translate(0);
+    }
+    
+} */
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#dev{
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+ #dev_img{
+    border-right: 0.5rem black solid;
+    border-bottom: 0.5rem black solid;
+    border-radius: 5%;
+    display:flex;
+    height: 100%;
+    width: auto;
+    max-width: 18.75rem;
+    size: cover;
+    object-fit: contain;
+ }
+
+
+ #dev:hover #dev_img{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+ }
+
+#hovers1{
+    margin-top:1.25rem;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo-h{
+    display: inline-block;
+    max-width: 12rem;
+    width:auto;
+    object-fit: contain;
+    animation-name: side1;
+    animation-duration: 5s;
+    animation-delay: 2000ms;
+    /* position: absolute; */
+}
+
+#logo-c1{
+    display: inline-block;
+    max-width: 12rem;
+    width:auto;
+    object-fit: contain;
+}
+
+#logo-g{
+    display: inline-block;
+    max-width: 15.6rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#dev:hover #hovers1{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+#Coding{
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+ #Coding_img{
+    border-radius: 10%;
+    display:flex;
+    height: 100%;
+    width: auto;
+    max-width: 31.25rem;
+    size: cover;
+    object-fit: contain;
+ }
+
+#Coding:hover #Coding_img{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+#hovers2{
+    margin-top:1.25rem;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo-p{
+    display: inline-block;
+    max-width: 12rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo-c2{
+    display: inline-block;
+    max-width: 10rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo-j{
+    display: inline-block;
+    max-width: 6rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#Coding:hover #hovers2{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+#CTF{
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+ #CTF_img{
+    border-top: 0.7rem black solid;
+    border-left: 0.7rem black solid;
+    border-radius: 5%;
+    display:flex;
+    height: 100%;
+    max-width: 19rem;
+    size: cover;
+    object-fit: contain;
+ }
+
+ #CTF:hover #CTF_img{
+    transform: scale(1.05);
+    border-bottom: 0.7rem black solid;
+    border-right: 0.7rem black solid;
+    border-top: none;
+    border-left: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#hovers3{
+    margin-top:1.25rem;
+    padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo-w{
+    display: inline-block;
+    max-width: 12rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo-f{
+    display: inline-block;
+    max-width: 12rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo-c3{
+    display: inline-block;
+    max-width: 16rem;
+    width: auto;
+    object-fit: contain;
+}
+#CTF:hover #hovers3{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#projects_head{
+    font-size: 1.9rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #3a82a3;
+    text-align: center;
+    text-decoration: underline 0.6rem blueviolet;
+}
+#projects_head:hover{
+    transform: scale(1.05);
+    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    transition: ease-out 0.3s;
+}
+#gold{
+    position: relative;
+    width: 100%;
+
+}
+
+#gold_img{
+    opacity: 1;
+    display: block;
+    width: 25rem;
+    height: auto;
+    transition: .75s ease;
+    backface-visibility: hidden;
+    border: 2rem black solid;
+}
+
+#hoverp1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 29rem;
+    height: auto;
+    opacity: 0;
+    transition: .75s ease;
+    background-color: #8db1c4;
+}
+
+#gold:hover #hoverp1{
+    opacity: 0.8;
+}
+
+#text{
+    color: rgb(16, 10, 126);
+    font-size: 1.6rem;
+    position: relative;
+    top:40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-right: 1rem;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    40% {
+      transform: translateY(-1.9rem); /* Jump up */
+    } 
+    100% {
+      transform: translateY(0); /* Return to initial position */
+    }
+  }
+
+#gmail{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 1rem;
+    left: 0.5rem;
+    margin-right: 1rem;
+    animation: bounce 1s infinite;
+}
+#gmail:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+#github{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 1rem;
+    left: 0.5rem;
+    margin-right: 1rem;
+    animation: bounce 1s infinite;
+    animation-delay: 330ms;
+}
+#github:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+#linkedin{
+    width: 4.5rem;
+    height: 4.5rem;
+    position: relative;
+    top: rem;
+    left: 0rem;
+    margin-right: 1rem;
+    animation: bounce 1s infinite;
+    animation-delay: 660ms;
+} 
+#linkedin:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact_head{
+    font-size: 1.9rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #3a82a3;
+    text-align: center;
+    text-decoration: underline 0.6rem blueviolet;
+}
+
+#contact_head:hover{
+    transform: scale(1.05);
+    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    transition: ease-out 0.3s;
+}
+
+#contact_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+#contact_form{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+}
+#fieldset{
+    border: 0.5rem solid #3a82a3;
+    background-image: url("images/moon-img.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+#contact_form_head{
+    font-size: 1.2rem;
+    font-family: 'Roboto-Mono', monospace;
+    color: #819ca8;
+    display: flex;
+}
+
+#contact_form_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"]{
+    border: 0.12rem solid #3a82a3;
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+
+}
+
+button[type="submit"]{
+    background-color: #eaeaea;
+    color: rgb(150, 19, 19);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    /* font */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
