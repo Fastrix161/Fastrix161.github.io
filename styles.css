@@ -1,66 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Old+South+Arabian&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tektur:wght@400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    scroll-behavior: smooth ;
+}
 body
 {
-    margin-top:2%;
-    padding-bottom: 5%;;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #2b3132;
+    margin-top:2dvh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #e9e4c3;
 }
 
 #nav{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding-left: 1.5rem;
     justify-content: flex-start;
     flex-wrap: wrap;
+    background-color: #b7b4a2;
 }
 .tab{
     font-size: 1.6rem;
     font-family: 'Tektur', monospace;
-    color: #3a82a3;
-    text-align: center;
+    color: #025886;
     transition: all 0.4s ease-in-out;
 }
 .tab:hover{
-    color: #025886;
+    color: #012437;
     transform: scale(1.2);
-    transition: all 0.25s ease-in-out;
-}
-#tab_end{
-    font-size: 1.6rem;
-    font-family: 'Tektur', monospace;
-    color: #3a82a3;
-    text-align: center;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.heading1{
-    color:aqua;
-    text-align: center;
-    font-size: 2.2rem ;
-    font-weight: 500;
-    font-family: 'Tektur', cursive;
-    -webkit-text-stroke: 0.2rem rgb(83, 83, 203);
-    background-color: #0077B6;
-    background-image: url("images/shadows-army-solo-leveling.jpg");
+@media screen and (max-width: 768px) {
+    #nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .basic{
+        flex-wrap: wrap;
+    }
+}
+
+#home{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition:all 0.4s ease-in-out;
+    left:0;
 }
 
-.heading1:hover{
-    box-shadow: #57078c 0vw 0vw 0vw 0.5vw;
+.heading1{
+    color:rgb(150, 226, 226);
+    text-align: center;
+    font-size: 4rem ;
+    font-family: 'Tektur', monospace;
+    -webkit-text-stroke: 0.1rem rgb(83, 83, 203);
+    transition:all 0.4s ease-in-out;
+}
+#Fastrix_head{
     transition: all 0.4s ease-in-out;
-    transform: scale(1.05);
+    /* object-fit: cover; */
 }
-*{
-    scroll-behavior: smooth ;
+.heading1:hover #Fastrix_head{
+    text-shadow: #997bad 0.25vw 0.25vw 0.25vw ;
+    transform: scale(1.1);
 }
+
 
 .basic{
     display: flex;
     gap:1rem;
     justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+#my_img{
+    display: flex;
+    height: auto;
+    /* object-fit: cover; */
+    align-self: center;
+    padding: 1rem;
 }
 
 #Fastrix_img{
@@ -70,64 +89,62 @@ body
     max-width: 18.75rem;
     size: cover;
     object-fit: contain;
-    box-shadow: 0.25vw 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);   
+    /* box-shadow: -0.5vw -0.5vw -0.5vw -0.5vw rgba(207, 201, 201, 0.812) inset; */
+
+    transition: all 0.5s ease-in-out;
 }
 #Fastrix_img:hover{
     /* opacity:0.5;*/
+    box-shadow: 0.25vw 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);   
+    
     transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
 }
 
-#profile{
-    display: block;
-    font-size: 1.6rem;
-    font-family: 'Roboto-Mono', monospace;
-    color: #3a82a3;
-    margin-left: 0.6rem;
-}
+
 
 #about{
     display: flex;
     justify-self: center;
     font-size: 3.2rem;
-    font-family: 'Roboto-Mono', monospace;
-    color: #3a82a3;
+    font-family: 'Winky Sans', sans-serif;
+    color: #0000007d;
     text-align: center;
     object-fit: cover;
-    text-decoration: underline 0.6rem blueviolet;
+    /* text-decoration: underline 0.3rem blueviolet; */
 }
 #about:hover{
-    transform: scale(1.05);
-    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    text-shadow: 0.15vw 0.15vw 0.15vw rgb(0, 0, 0, 0.3);
     transition: all 0.2s ease-in-out;
     transition: ease-out 0.3s;
 }
-
-#my_img{
-    display: flex;
-    height: auto;
-    object-fit: cover;
-    align-self: center;
+#profile{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: 'Winky Sans', sans-serif;
+    color: #0f587a;
+    margin-left: 0.6rem;
 }
-
 
 #basic2{
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 2%;
 }
 
 #interest{
     font-size: 1.6rem;
-    font-family: 'Roboto-Mono', monospace;
+    font-family: 'Winky Sans', sans-serif;
     color: #57078c;
     background-color: rgb(119, 177, 228);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #Easter_egg{
     color: #ffffff;
-    font-family: 'Roboto-Mono', monospace;
+    font-family: 'Winky Sans', sans-serif;
     font-size: 1.25rem;
     background-color: #ffffff;
     border:none;
@@ -137,7 +154,7 @@ body
 }
 #Easter_egg:hover{
     color: rgb(53, 139, 165);
-    font-family: 'Roboto-Mono', monospace;
+    font-family: 'Winky Sans', sans-serif;
     background-color: rgb(221, 233, 236);
 }
 
@@ -146,34 +163,38 @@ body
 
 #skills_head{
     font-size: 1.9rem;
-    font-family: 'Roboto-Mono', monospace;
-    color: #3a82a3;
+    font-family: 'Winky Sans', sans-serif;
+    color: #0000007d;
     text-align: center;
-    text-decoration: underline 0.6rem blueviolet;
+    object-fit: cover;
 }
 #skills_head:hover{
-    transform: scale(1.05);
-    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    text-shadow: 0.15vw 0.15vw 0.15vw rgb(0, 0, 0, 0.3);
     transition: all 0.2s ease-in-out;
     transition: ease-out 0.3s;
 }
-/* 
-@keyframes side1 {
-    0%{
-        transform: translate(position: absolute);
+
+@keyframes appear {
+    from{
+    opacity: 0;
+    scale : 0.5;
     }
-     50%{
-        transform: translateX(-1.5rem);
-    } 
-    100%{
-        transform: translate(0);
+    to{
+        opacity: 1;
+        scale: 1;
     }
     
-} */
+}
 
 .logo{
     display: flex;
     justify-content: space-evenly;
+    transition: all 0.5s ease-in-out;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    cursor: pointer;
 }
 
 #dev{
@@ -181,39 +202,40 @@ body
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    flex-direction: column;
+    justify-content: center
 }
 
- #dev_img{
-    border-right: 0.5rem black solid;
-    border-bottom: 0.5rem black solid;
-    border-radius: 5%;
-    display:flex;
-    height: 100%;
-    width: auto;
-    max-width: 18.75rem;
-    size: cover;
-    object-fit: contain;
- }
+#dev_head{
+    font-size: 1.5rem;
+    font-family: 'Winky Sans', sans-serif;
+    color: #170a41a3;
+    text-align: center;
+    object-fit: cover;
+}
 
-
- #dev:hover #dev_img{
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
- }
-
+#Coding_head{
+    font-size: 1.5rem;
+    font-family: 'Winky Sans', sans-serif;
+    color: #170a41a3;
+    text-align: center;
+    object-fit: cover;
+}
 #hovers1{
     margin-top:1.25rem;
     padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1.6rem;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s ease-in-out;
 }
 
 #logo-h{
     display: inline-block;
     max-width: 12rem;
+    padding: left 1.8rem right 1.8rem;
     width:auto;
     object-fit: contain;
     animation-name: side1;
@@ -225,6 +247,7 @@ body
 #logo-c1{
     display: inline-block;
     max-width: 12rem;
+    padding: left 1.8rem right 1.8rem;
     width:auto;
     object-fit: contain;
 }
@@ -236,8 +259,9 @@ body
     object-fit: contain;
 }
 
-#dev:hover #hovers1{
-    opacity: 1;
+.logo:hover {
+    transform: rotate(15deg) alternate-reverse;
+    transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
 
@@ -245,37 +269,29 @@ body
     height:auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 2%;
 }
 
- #Coding_img{
-    border-radius: 10%;
-    display:flex;
-    height: 100%;
-    width: auto;
-    max-width: 31.25rem;
-    size: cover;
-    object-fit: contain;
- }
-
-#Coding:hover #Coding_img{
-    transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-}
 
 #hovers2{
     margin-top:1.25rem;
     padding-left: 5%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1.6rem;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s ease-in-out;
 }
 
 #logo-p{
     display: inline-block;
     max-width: 12rem;
+    justify-self: center;
     width: auto;
     object-fit: contain;
 }
@@ -283,6 +299,8 @@ body
 #logo-c2{
     display: inline-block;
     max-width: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: auto;
     object-fit: contain;
 }
@@ -290,105 +308,62 @@ body
 #logo-j{
     display: inline-block;
     max-width: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     width: auto;
     object-fit: contain;
 }
 
 #Coding:hover #hovers2{
-    opacity: 1;
+    transform: rotate(15deg) alternate-reverse;
     transition: all 0.5s ease-in-out;
 }
-
-#CTF{
+#projects{
     height:auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     padding-top: 2%;
+    gap: 5rem;
 }
-
- #CTF_img{
-    border-top: 0.7rem black solid;
-    border-left: 0.7rem black solid;
-    border-radius: 5%;
-    display:flex;
-    height: 100%;
-    max-width: 19rem;
-    size: cover;
-    object-fit: contain;
- }
-
- #CTF:hover #CTF_img{
-    transform: scale(1.05);
-    border-bottom: 0.7rem black solid;
-    border-right: 0.7rem black solid;
-    border-top: none;
-    border-left: none;
-    transition: all 0.5s ease-in-out;
-}
-
-#hovers3{
-    margin-top:1.25rem;
-    padding-left: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-#logo-w{
-    display: inline-block;
-    max-width: 12rem;
-    width: auto;
-    object-fit: contain;
-}
-
-#logo-f{
-    display: inline-block;
-    max-width: 12rem;
-    width: auto;
-    object-fit: contain;
-}
-
-#logo-c3{
-    display: inline-block;
-    max-width: 16rem;
-    width: auto;
-    object-fit: contain;
-}
-#CTF:hover #hovers3{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
 
 #projects_head{
     font-size: 1.9rem;
-    font-family: 'Roboto-Mono', monospace;
-    color: #3a82a3;
+    font-family: 'Winky Sans', sans-serif;
+    color: #0000007d;
     text-align: center;
-    text-decoration: underline 0.6rem blueviolet;
+    object-fit: cover;
 }
 #projects_head:hover{
-    transform: scale(1.05);
-    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    text-shadow: 0.15vw 0.15vw 0.15vw rgb(0, 0, 0, 0.3);
     transition: all 0.2s ease-in-out;
     transition: ease-out 0.3s;
 }
+
 #gold{
     position: relative;
+    display: flex;
+    justify-self: center;
     width: 100%;
-
+    max-width: min(100%, 27rem);
+    height: auto;
+    
+    transition: all 0.3s ease-in-out;
 }
 
 #gold_img{
     opacity: 1;
-    display: block;
-    width: 25rem;
+    display: flex;
+    width: 100%;
+    max-width: min(100%,25rem);
     height: auto;
     transition: .75s ease;
     backface-visibility: hidden;
-    border: 2rem black solid;
+    border: 1rem black solid;
+    border-radius: 1.5rem;
 }
 
 #hoverp1{
@@ -397,29 +372,71 @@ body
     bottom: 0;
     left: 0;
     right: 0;
-    
-    width: 29rem;
+    width: 100%;
+    max-width: 27rem;
     height: auto;
     opacity: 0;
     transition: .75s ease;
-    background-color: #8db1c4;
+    background-color: #4b6e9baa;
+    border-radius: 1.5rem;
 }
 
 #gold:hover #hoverp1{
-    opacity: 0.8;
+    opacity: 0.85;
+}
+
+#gold:hover #hoverp2{
+    opacity: 1;
+}
+#gold:hover{
+    transform: scale(1.1);
+    text-shadow: 0.15vw 0.15vw 0.15vw rgb(0, 0, 0, 0.3);
+}
+
+#github-icon{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 2rem;
+    left: 0.5rem;
+    margin-right: 1rem;
+}
+
+#itch-icon{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 2rem;
+    left: 0.5rem;
+    margin-right: 1rem;
+}
+#box{
+    position: relative;
+    text-align: center;
+    top: 30%;
+    margin-right: 1rem;
+}
+
+#hoverp2{
+    display: flex;
+    background-color: #9195a5aa;
+    border: #3f55ab solid;
+    border-radius: 1.5rem;
+    width:100%;
+    max-width:25rem;
+    height: auto;
+    margin-top: 3rem;
 }
 
 #text{
-    color: rgb(16, 10, 126);
-    font-size: 1.6rem;
-    position: relative;
-    top:40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    font-family: 'Winky Sans', sans-serif;
+    color: rgb(10, 72, 127); 
     text-align: center;
-    margin-right: 1rem;
+    object-fit: cover;  
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 @keyframes bounce {
@@ -427,7 +444,7 @@ body
       transform: translateY(0); /* Initial position */
     }
     40% {
-      transform: translateY(-1.9rem); /* Jump up */
+      transform: translateY(-1.2rem); /* Jump up */
     } 
     100% {
       transform: translateY(0); /* Return to initial position */
@@ -443,7 +460,7 @@ body
     margin-right: 1rem;
     animation: bounce 1s infinite;
 }
-#gmail:hover{
+#gm:hover{
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
@@ -458,7 +475,7 @@ body
     animation: bounce 1s infinite;
     animation-delay: 330ms;
 }
-#github:hover{
+#gh:hover{
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
@@ -472,7 +489,7 @@ body
     animation: bounce 1s infinite;
     animation-delay: 660ms;
 } 
-#linkedin:hover{
+#li:hover{
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
@@ -480,19 +497,20 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 #contact_head{
     font-size: 1.9rem;
-    font-family: 'Roboto-Mono', monospace;
-    color: #3a82a3;
+    font-family: 'Winky Sans', sans-serif;
+    color: #0000007d;
     text-align: center;
-    text-decoration: underline 0.6rem blueviolet;
+    object-fit: cover;
 }
 
 #contact_head:hover{
-    transform: scale(1.05);
-    text-shadow: 0.25vw 0.25vw 0.25vw rgb(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    text-shadow: 0.15vw 0.15vw 0.15vw rgb(0, 0, 0, 0.3);
     transition: all 0.2s ease-in-out;
     transition: ease-out 0.3s;
 }
@@ -512,7 +530,7 @@ body
 
 }
 #fieldset{
-    border: 0.5rem solid #3a82a3;
+    border: 0.3rem solid #3a82a3;
     background-image: url("images/moon-img.jpg");
     background-size: cover;
     border-radius: 1rem;
@@ -520,9 +538,10 @@ body
 }
 #contact_form_head{
     font-size: 1.2rem;
-    font-family: 'Roboto-Mono', monospace;
+    font-family: 'Winky Sans', sans-serif;
     color: #819ca8;
     display: flex;
+    cursor: pointer;
 }
 
 #contact_form_body{
@@ -533,16 +552,23 @@ body
 }
 
 input[type="text"], input[type="email"]{
-    border: 0.12rem solid #3a82a3;
-    border-radius: 0.25rem;
-    padding: 1.25rem;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    color: #275265;
+    background-color: #eaeaeac5;
 
+    border: 0.12rem solid #3a82a3;
+    border-radius: 1.5rem;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#comment{
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
 }
 
 button[type="submit"]{
-    background-color: #eaeaea;
+    background-color: #efefef;
     color: rgb(150, 19, 19);
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
@@ -556,3 +582,35 @@ button[type="submit"]{
     display: flex;
     justify-content: center;
 }
+
+button[type="submit"]:hover{
+    color: #eaeaea;
+    background-color: rgb(150, 19, 19);
+    transition: all 0.2s ease-in-out;
+}
+
+#tab_end{
+    padding-left: 2rem;
+}
+#tab_end a{
+    text-decoration: none;
+}
+
+footer{
+    bottom: 0 ;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 2rem; */
+    background-color: #9e9b83;
+}
+
+#foot_text{
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    font-family: 'Winky Sans', sans-serif;
+    color: #020820;
+}
+
