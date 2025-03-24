@@ -36,27 +36,6 @@ body
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-    
-    #nav{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .basic{
-        flex-wrap: wrap;
-    }
-}
-@media screen and (min-width: 768px) {
-    #contact_body{
-        display: flex;
-        justify-content: space-between;
-        gap: 15vw;
-    }
-    #contact_info{
-        padding-top: 11rem;
-        /* flex-direction: column; */
-    }
-}
 /* @media screen and (max-width: 480px) {
     #gold{max-width: 90vw;}
     #gold_img{max-width: 90vw-2rem;}
@@ -145,11 +124,19 @@ body
     margin-left: 0.6rem;
 }
 
+#profile p{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: center;
+    object-fit: cover;
+    padding-bottom: 1.5rem;
+}
 #basic2{
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    width:100%;
     padding-top: 2%;
+    /* background-color: rgb(150, 19, 19); */
 }
 
 #interest{
@@ -157,17 +144,18 @@ body
     font-family: 'Winky Sans', sans-serif;
     color: #57078c;
     background-color: rgb(119, 177, 228);
+    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-#Easter_egg{
+/* #Easter_egg{
     color: #ffffff;
     font-family: 'Winky Sans', sans-serif;
     font-size: 1.25rem;
     background-color: #ffffff;
     border:none;
-     /* border: #0077B6 solid; */
+     /* border: #0077B6 solid; 
      text-align: center;
      align-items: center;
 }
@@ -175,7 +163,7 @@ body
     color: rgb(53, 139, 165);
     font-family: 'Winky Sans', sans-serif;
     background-color: rgb(221, 233, 236);
-}
+} */
 
 
 /* Skills */
@@ -637,3 +625,33 @@ footer{
     color: #020820;
 }
 
+
+@media screen and (max-width: 1100px) {
+    #profile p{
+        padding-left: 0rem ;
+        padding-right: 0rem;
+
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    
+    #nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .basic{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 768px) {
+    #contact_body{
+        display: flex;
+        justify-content: space-between;
+        gap: 15vw;
+    }
+    #contact_info{
+        padding-top: 11rem;
+        /* flex-direction: column; */
+    }
+}
