@@ -11,28 +11,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Old+South+Arabian&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-  <div id="nav">
+  
+  <nav id="nav" role="navigation">
     <a class="tab" href="#home">Root</a>
     <a class="tab" href="#about" >About</a>
     <a class="tab" href="#skills" >Skills</a>
     <a class="tab" href="#projects" >Projects</a>
     <a class="tab" href="#contact" >Contact</a>
-  </div>
+  </nav>
   <section id="home">
+    <hr class = "hr1">
   <div class="heading1">
-    <h1 >Fastrix</h1>
+    <h1 id="Fastrix_head">Fastrix</h1>
+
   </div>
+
   <div class="basic">
 
     <div id="my_img">
       <img id="Fastrix_img" src="images/Fastrix.jpg" width="100%" alt="Fastrix_image" />
     </div>
-
 
     <div id="profile">
       <h1 id="about">About me</h1>
@@ -41,12 +46,14 @@
       </p>
     </div>
   </div>
+
   <div id="basic2">
     <div id="interest" >
     <p>I like to do a lot of things, and have quite a dynamic catalog of hobbies.
       <br/>This includes reading books, watching anime, traveling, listening to music and many other things.
       <br/>I am also a martial artist (at Taekwondo).
     </p>
+    
    </div>
 
     <!-- <div id="Easter" >
@@ -54,6 +61,8 @@
     </div> -->
 
   </div>
+
+  <hr class = "hr1">
   </section>
 
   <div id="skills">
@@ -61,7 +70,10 @@
       <h1>Skills</h1>
     </div>
       <div id="dev">
-        <img id="dev_img" src="images/developer-logo-photo.jpg" alt="Dev" />
+        
+         <div id="dev_head">
+          <h1>Dev</h1>
+        </div>
         <div id="hovers1">
           <div class="logo"><img id="logo-h" src="images/html-logo.png" alt="HTML"></div>
           <div class="logo"><img id="logo-c1" src="images/CSS-logo.png" alt="CSS"></div>
@@ -70,21 +82,15 @@
       </div>
 
        <div id="Coding">
-        <img id="Coding_img" src="images/coding-photo.jpg" alt="Coding" />
+         <div id="Coding_head">
+          <h1>Coding languages</h1>
+        </div>
         <div id="hovers2">
           <div class="logo"><img id="logo-p" src="images/python-logo.png" alt="Python"></div>
           <div class="logo"><img id="logo-c2" src="images/C++_Logo.png" alt="C++"></div>
           <div class="logo"><img id="logo-j" src="images/Java-logo.png" alt="Java"></div>
        </div>
-    </div>
-
-    <div id="CTF">
-      <img id="CTF_img" src="images/ctf-logo.png" alt="CTF" />
-      <div id="hovers3">
-        <div class="logo"><img id="logo-w" src="images/web-exp-logo.jpg" alt="Web Exploitation"></div>
-        <div class="logo"><img id="logo-f" src="images/forensics-logo.jpg" alt="Forensics"></div>
-        <div class="logo"><img id="logo-c3" src="images/cryptography-logo.png" alt="Cryptography"></div>
-      </div>
+     </div>
     </div>
 
   </div>
@@ -94,25 +100,36 @@
   <div id="projects_head">
     <h1>Projects</h1>
   </div>
+  <div>
   <div id="gold">
+    
     <img id="gold_img" src="images/image.png" alt="Is it really Gold?"/>
     <div id="hoverp1">
-      <div id="text">
-        <h1>Is it really gold?</h1>
-        <p>It is a game made using Godot. It is a puzzle game where you have to find the gold coins hidden in the maze.</p>
+      <div id="box">
+        <a href="https://github.com/Fastrix161/Gold" target="_blank" ><img id="github-icon" src="images/github-logo.png" alt="Github"></a>
+        <a href="https://fastrix.itch.io/is-it-really-gold" target="_blank" ><img id="itch-icon" src="images/itch-io.png" alt="Itch.io"></a>
       </div>
     </div>
+    </div>
+    <div id="hoverp2">
+      <div id="text">
+        <h1>Is it really Gold?</h1>
+        <p>"Is is really gold?" is a game I made during Syntax-Error 2024.<br/>
+          It is a pixelated 2-D platformer game, made on Godot engine.</p>
+        </div>
+      </div>
 
   </div>
 
 </div>
+
 <div id="contact">
   <div id="contact_head">
     <h1>Contact me</h1>
   </div>
   <div id="contact_info">
     <div id="gm"> 
-    <a href="mailto:atharv_s@ece.iitr.ac.in"><img id="gmail" src="images/gmail-logo.png" alt="G-mail"></a>
+    <a href="mailto:atharvsingthal2904@gmail.com"><img id="gmail" src="images/gmail-logo.png" alt="G-mail"></a>
     </div>
     <div id="gh">
     <a href="https://github.com/Fastrix161"><img id="github" src="images/github-logo.png" alt="Github"></a>
@@ -134,20 +151,26 @@
           <br/><br/>
           <input type="email" name="email" placeholder="Email" required>
           <br/><br/>
-          <input type="text" name="subject" placeholder="Comment" required>
+          <input id=comment type="text" name="subject" placeholder="Comment" required>
           <br/><br/>
-          <button type="submit">Send</button>
+          <div id="button"><button type="submit">Send</button></div>
           </fieldset>
           </form>
     </div>
     </div>
   </div>
 
-  <footer>
+  <footer id="footer">
     
-    <div id="tab_end" class="tab">
-      <a href="#nav">~</a>
+    <div id="tab_end" >
+      <a class="tab" href="#">~</a>
     </div>
+
+    <div id="foot_text">
+      <p>© Fastrix 2025</p>
+    </div>
+
   </footer>
+
   </body>
 </html>
